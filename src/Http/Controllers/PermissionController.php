@@ -4,7 +4,7 @@ namespace Laraveldaily\LaravelPermissionEditor\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-
+//latest version
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 
