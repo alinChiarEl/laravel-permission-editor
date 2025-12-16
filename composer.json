@@ -1,0 +1,28 @@
+{
+    "name": "laraveldaily/laravel-permission-editor",
+    "description": "Visual UI for managing Roles/Permissions for Spatie Laravel Permission package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Laraveldaily\\LaravelPermissionEditor\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laraveldaily\\LaravelPermissionEditor\\PermissionEditorServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "spatie/laravel-permission": "^5.0"
+    },
+    "authors": [
+        {
+            "name": "Povilas Korop",
+            "email": "povilas@laraveldaily.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
