@@ -4,7 +4,7 @@ namespace Laraveldaily\LaravelPermissionEditor\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Laraveldaily\LaravelPermissionEditor\Http\Models\Migration;
+
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 
@@ -13,8 +13,7 @@ class PermissionController extends Controller
 {
     public function index()
     {
-        $m = Migration::all();
-        
+
         $permissions = Permission::with('roles:name')->get();
 
         return view('permission-editor::permissions.index', compact('permissions'));

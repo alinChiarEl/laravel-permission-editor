@@ -39,7 +39,7 @@
                                 </label>
 
                                 @foreach ($roles as $id => $name)
-                                    <input type="checkbox" name="roles[]" id="role-{{ $id }}" value="{{ $id }}" @checked(in_array($id, old('roles', [])))>
+                                    <input type="checkbox" name="roles[]" id="role-{{ $id }}" value="{{ $name }}" @checked(in_array($id, old('roles', [])))>
                                     <label class="text-sm font-medium text-gray-700" for="role-{{ $id }}">{{ $name }}</label>
                                     <br />
                                 @endforeach
